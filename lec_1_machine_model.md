@@ -30,8 +30,9 @@ int &y = x; // declares reference variable 'y' which refers to variable 'x'
 x = 24; // assigns 24 to object named x/y
 y = z; // Does NOT re-bind y to a different object
 cout << x;
-
 ```
+- `x` and `y` share the same memory location.
+- when the value of `y` changes, the value of `x` will also change
 
 ## Pass by Value
 
