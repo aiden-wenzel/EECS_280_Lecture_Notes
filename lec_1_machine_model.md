@@ -26,7 +26,7 @@ some_function(x); // pass the value in x to some_function
 ```cpp
 int x = 42; // initialize value of x to 42
 int z = 3; // initialize value of z to 3
-int &y = x; // y and x are now names for the same object
+int &y = x; // declares reference variable 'y' which refers to variable 'x'
 x = 24; // assigns 24 to object named x/y
 y = z; // Does NOT re-bind y to a different object
 cout << x;
