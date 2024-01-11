@@ -50,6 +50,8 @@ int main() {
 }
 ```
 
+- `x` and `y` are local variables to the `swap` function. They recieve copies of the values passed to the function.
+
 ## Pass by Reference
 ```cpp
 void swap(int &x, int &y) {
