@@ -11,7 +11,7 @@
 
 ## Value Semantics
 
-- `=` operator initializes, assigns, or copies values
+- `=` operator initializes, assigns, or copies values.
 
 ```cpp
 int x = 42; // initialize value of x to 42
@@ -21,7 +21,7 @@ some_function(x); // pass the value in x to some_function
 ```
 
 ## Reference Semantics
-- In C++ you can declare a reference (alias) to a variable
+- In C++, you can declare a reference (alias) to a variable.
 
 ```cpp
 int x = 42; // initialize value of x to 42
@@ -32,7 +32,7 @@ y = z; // Does NOT re-bind y to a different object
 cout << x;
 ```
 - `x` and `y` share the same memory location.
-- when the value of `y` changes, the value of `x` will also change
+- When the value of `y` changes, the value of `x` will also change.
 
 ## Pass by Value
 
@@ -46,7 +46,7 @@ void swap(int x, int y) {
 int main() {
     int a = 2; // a initialized to 2
     int b = 7; // b initialized to 7
-    void swap(a, b); // COPIES of a and b are passed into function
+    swap(a, b); // COPIES of a and b are passed into function
 }
 ```
 
@@ -61,7 +61,7 @@ void swap(int &x, int &y) {
 int main() {
     int a = 2; // a initialized to 2
     int b = 7; // b initialized to 7
-    void swap(a, b); //
+    swap(a, b); //
 }
 ```
-- x and y are now references to the values passed into the functions
+- `x` and `y` are now reference variables to integers. They are not new variables but are instead aliases for the variables that will be passed to the function.
