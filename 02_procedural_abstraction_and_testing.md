@@ -94,3 +94,28 @@ void mystery(vector<int> &v) {
 
 - **Local**: The implementation of an abstraction can be understood without examining any other abstraction implementation.
 - **Substitutable:** Changing the function algorithm should not change the way the abstraction is used.
+
+## Testing
+
+- **Unit Testing:** Make sure one piece works at a time.
+- **System Testing:** Test the entire project.
+- **Regression testing:** Automatically run all unit and system tests after a code change.
+- `assert()`: Throws an error if expression in argument is false. Make sure to add `#include <cassert>`.
+
+## Unit Tests
+```cpp
+void test_function_1() {
+    //assert something
+    assert();
+}
+
+void test_function_2() {
+    //assert something
+    assert();
+}
+
+int main() {
+    test_function_1();
+    test_function_2();
+}
+```
