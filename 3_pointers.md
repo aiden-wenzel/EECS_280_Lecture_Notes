@@ -72,8 +72,19 @@ int main() {
 }
 ```
 
+## Pointer Arithmetic
 
-
+```cpp
+int main() {
+    int x = 1;
+    int y = 12;
+    int *ptr = &x;
+    ptr++;
+    cout << *ptr << endl;;
+    ptr--;
+    cout << *ptr << endl;
+}
+```
 
 
 
