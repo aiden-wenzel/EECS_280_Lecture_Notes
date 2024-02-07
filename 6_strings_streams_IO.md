@@ -84,5 +84,13 @@ int main() {
 }
 ```
 
-# C++ Streams
+## C Style Strings
+- Strings are arrays of characters
+- `char str1[6] = { 'h', 'e', 'l', 'l', 'o', \0}`
+- null character: `\0` indicates where the array ends
+
+```c
+char str2[6] = "hello"; // last character set to null
+```
+
 
